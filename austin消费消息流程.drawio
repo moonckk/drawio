@@ -1,1 +1,79 @@
-<mxfile host="app.diagrams.net" modified="2023-02-04T02:22:05.260Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" version="20.8.16" etag="vdpVLR81bzdU2_XYPYig" type="github"><diagram name="第 1 页" id="gmGtatbz0zjE8QE89lzx">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-04T02:44:43.362Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="ejfHEDq0YKYK91l7CYwr" version="20.8.16" type="github">
+  <diagram name="第 1 页" id="gmGtatbz0zjE8QE89lzx">
+    <mxGraphModel dx="1221" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-1" value="Receiver" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="310" width="100" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-19" value="MQ" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="310" width="100" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-36" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCsT5O6rdNuxYP5jCn3J-19">
+          <mxGeometry x="45" y="70" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-26" value="ConsumeService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="313.5" y="310" width="100" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-39" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCsT5O6rdNuxYP5jCn3J-26">
+          <mxGeometry x="45" y="195" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-37" value="监听MQ是否有新消息" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="qCsT5O6rdNuxYP5jCn3J-36" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="380" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-38" value="返回消息" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;" edge="1" source="qCsT5O6rdNuxYP5jCn3J-36" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="456" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-40" value="消息传给消费者处理" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="qCsT5O6rdNuxYP5jCn3J-39" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="505" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-44" value="TaskPendingHolder" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="310" width="100" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-47" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCsT5O6rdNuxYP5jCn3J-44">
+          <mxGeometry x="45" y="310" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-48" value="消费者获取处理&lt;br&gt;消息的线程池" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="qCsT5O6rdNuxYP5jCn3J-47" parent="1">
+          <mxGeometry x="-0.04" y="10" relative="1" as="geometry">
+            <mxPoint x="360" y="620" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-49" value="返回指定线程池" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;" edge="1" source="qCsT5O6rdNuxYP5jCn3J-47" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="696" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-50" value="ExecutorService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="310" width="100" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-51" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCsT5O6rdNuxYP5jCn3J-50">
+          <mxGeometry x="45" y="440" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-52" value="消费者使用线程池处理任务" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="qCsT5O6rdNuxYP5jCn3J-51" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="750" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-54" value="Task" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="310" width="100" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-55" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCsT5O6rdNuxYP5jCn3J-54">
+          <mxGeometry x="45" y="560" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-56" value="线程池执行任务" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="qCsT5O6rdNuxYP5jCn3J-55" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="870" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
