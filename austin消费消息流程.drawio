@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-02-04T02:46:26.561Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="WZ8mONk5D9gBCr6tYwC-" version="20.8.16" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-04T02:58:45.267Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="fwjxNHTzNDOA_QmJMuRl" version="20.8.16" type="github">
   <diagram name="第 1 页" id="gmGtatbz0zjE8QE89lzx">
-    <mxGraphModel dx="1221" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1221" dy="1805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -63,7 +63,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="qCsT5O6rdNuxYP5jCn3J-54" value="Task" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="710" y="310" width="100" height="660" as="geometry" />
+          <mxGeometry x="710" y="310" width="100" height="650" as="geometry" />
         </mxCell>
         <mxCell id="qCsT5O6rdNuxYP5jCn3J-55" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCsT5O6rdNuxYP5jCn3J-54">
           <mxGeometry x="45" y="560" width="10" height="80" as="geometry" />
@@ -73,6 +73,79 @@
             <mxPoint x="620" y="870" as="sourcePoint" />
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-59" value="Task" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1000" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-60" value="DiscardMessageService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1000" width="100" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-63" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCsT5O6rdNuxYP5jCn3J-60">
+          <mxGeometry x="45" y="80" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-61" value="ShieldService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1000" width="100" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-66" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCsT5O6rdNuxYP5jCn3J-61">
+          <mxGeometry x="45" y="190" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-62" value="DeduplicationRuleService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1000" width="100" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-69" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCsT5O6rdNuxYP5jCn3J-62">
+          <mxGeometry x="45" y="300" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-64" value="丢弃消息" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="qCsT5O6rdNuxYP5jCn3J-63" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="1080" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-67" value="屏蔽处理" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="qCsT5O6rdNuxYP5jCn3J-66" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="1190" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-70" value="消息去重" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="qCsT5O6rdNuxYP5jCn3J-69" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="1300" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-72" value="HandlerHolder" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="655" y="1000" width="100" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-73" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCsT5O6rdNuxYP5jCn3J-72">
+          <mxGeometry x="45" y="420" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-74" value="获取具体发送消息的处理器" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="qCsT5O6rdNuxYP5jCn3J-73" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="1420" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-75" value="返回 Handler" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;" edge="1" source="qCsT5O6rdNuxYP5jCn3J-73" parent="1">
+          <mxGeometry y="-6" relative="1" as="geometry">
+            <mxPoint x="80" y="1496" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-76" value="Handler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="790" y="1000" width="100" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-77" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCsT5O6rdNuxYP5jCn3J-76">
+          <mxGeometry x="45" y="550" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-78" value="发送消息" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="qCsT5O6rdNuxYP5jCn3J-77" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="1550" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-80" value="从MQ拉取消息,使用线程池处理消息" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="30" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-81" value="线程发送消息" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="900" y="1280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qCsT5O6rdNuxYP5jCn3J-82" value="Sender" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="-180" width="100" height="300" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
