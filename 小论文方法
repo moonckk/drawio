@@ -1,9 +1,83 @@
-<mxfile host="app.diagrams.net" modified="2023-04-10T07:47:22.600Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" version="21.1.2" etag="Q5vhO0HjP8BIH7WXRm2V" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-10T08:00:37.065Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="ArmRumeWKKYHEoX1Y-DV" version="21.1.2" type="github">
   <diagram name="第 1 页" id="ocJUjDRSVXon9yZCMc2N">
-    <mxGraphModel>
+    <mxGraphModel dx="1221" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FA_SuPmq99ITGFAi6nFU-1" target="FA_SuPmq99ITGFAi6nFU-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-1" value="初始化每个视图的权重alpha=1/V" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FA_SuPmq99ITGFAi6nFU-3" target="FA_SuPmq99ITGFAi6nFU-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FA_SuPmq99ITGFAi6nFU-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-3" value="alpha收敛？" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="390" y="70" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FA_SuPmq99ITGFAi6nFU-5" target="FA_SuPmq99ITGFAi6nFU-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-5" value="对每个视图进行K-means聚类，得到每个视图的标签label_v" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="560" y="80" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FA_SuPmq99ITGFAi6nFU-7" target="FA_SuPmq99ITGFAi6nFU-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-7" value="合并所有视图，得到一个视图all_x" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="900" y="80" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FA_SuPmq99ITGFAi6nFU-8" target="FA_SuPmq99ITGFAi6nFU-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-8" value="对合并后的视图all_x进行整体归一化" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="900" y="190" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FA_SuPmq99ITGFAi6nFU-9" target="FA_SuPmq99ITGFAi6nFU-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-9" value="用每个视图的权重*合并视图all_x对应的子视图" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="567" y="190" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FA_SuPmq99ITGFAi6nFU-10" target="FA_SuPmq99ITGFAi6nFU-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-10" value="用每个视图的权重*合并视图all_x对应的子视图" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="567" y="300" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FA_SuPmq99ITGFAi6nFU-12" target="FA_SuPmq99ITGFAi6nFU-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-12" value="对合并视图all_x执行K-means,得到合并视图中每个样本的标签label_all" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="900" y="300" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FA_SuPmq99ITGFAi6nFU-13" target="FA_SuPmq99ITGFAi6nFU-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-13" value="计算每个视图中的样本标签label(v)_x与合并视图的label_all的NMI" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="900" y="400" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="FA_SuPmq99ITGFAi6nFU-15" target="FA_SuPmq99ITGFAi6nFU-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-15" value="根据NMI更新权重alpha&lt;br&gt;alpha(v)=nmi(v)/sum(nmi)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="560" y="400" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-26" value="否" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="70" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-28" value="是" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FA_SuPmq99ITGFAi6nFU-29" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="425" width="30" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
